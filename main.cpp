@@ -21,8 +21,8 @@ int main()
         {
             int character = out[i];
             if (prime(character))
-            if ((character <= 90&&character>=65) || (character <=122 && character>=97) || character == ' ')
-                cout << (char)character;
+                if ((character <= 90&&character>=65) || (character <=122 && character>=97) || character == ' ')
+                    cout << (char)character;
         }
     }
 
@@ -33,9 +33,7 @@ bool prime(int a)
     if (a<=1) 
         return false;
     for (int i = 2; i < a; i++)
-    {
         if (a%i == 0) 
             return false;
-    }
     return true;
 }
